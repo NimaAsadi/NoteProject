@@ -13,9 +13,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
-
 @Service
-@RequiredArgsConstructor
 public class NoteServiceImpl implements NoteService {
 
     private final Map<Long, Note> notes = new ConcurrentHashMap<>();
